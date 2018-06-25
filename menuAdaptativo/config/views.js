@@ -36,6 +36,8 @@ module.exports.views = {
   *                                                                          *
   ***************************************************************************/
 
-  layout: 'layouts/layout'
+  engine: 'ejs',
+  layout: 'layouts/layout',
+  partials: false
 
 };
