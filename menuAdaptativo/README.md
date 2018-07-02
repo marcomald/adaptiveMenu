@@ -1,27 +1,62 @@
-# menu-adaptativo
+# Proyecto Final - Certificación de Herramientas de Desarrollo
 
-a [Sails v1](https://sailsjs.com) application
+Este es un prototipo de un menu adaptativo.<br>
 
+## Características
 
-### Links
+* El menú se lee através de un archivo de texto que contiene un JSON.
+* El menú se auto-ordena al dar click en los elementos (Items).
+* El menú refleja el estilo que se ponga en el JSON.
+* El menú se guarda en una taba de base de datos Postgres, por lo que al refrescar la pagina no pierde el orden.
 
-+ [Get started](https://sailsjs.com/get-started)
-+ [Sails framework documentation](https://sailsjs.com/documentation)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/enterprise)
+## Tecnologías Usadas
 
-
-### Version info
-
-This app was originally generated on Sun Jun 24 2018 22:36:57 GMT-0500 (Hora est. Pacífico, Sudamérica) using Sails v1.0.0.
-
-<!-- Internally, Sails used [`sails-generate@1.15.25`](https://github.com/balderdashy/sails-generate/tree/v1.15.25/lib/core-generators/new). -->
-
+Se utilizaron diversas tecnologías para el desarrollo del prototipo:
+* Front End - [AngularJS](https://angularjs.org/)
+* Front End - [JQuery](https://angularjs.org/)
+* Back End - [SailsJS](https://sailsjs.com/)
+* Back End - [NPM](https://www.npmjs.com/)
+* BD - [PostgreSQL](https://www.postgresql.org/)
 
 
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
+## Instalación (Windows)
 
+Para la instalación del ambiente de funcionamiento del prototipo en windows debe seguir los siguientes pasos:
+
+**1.** Instalar la base de datos:<br>
+    1.1. Descargar [Instalador PostgreSQL](https://www.openscg.com/bigsql/oscg_download/?file=packages/PostgreSQL-10.4-1-win64-bigsql.exe&user=${auth.authName})<br>
+    1.2. Instalar, para lo que se debe configurar el host: postgresql, usuario: root y contraseña: root<br>
+    1.3. Configurar, se debe crear una base de datos llamada menuAdaptativo:<br>
+    ```bash
+    create database menuAdaptativo;
+    ```
+
+**2.** Instalar GIT:<br>
+  2.1. Descargar [GIT](https://git-scm.com/download/win)
+  2.2. Instalar configuración por defecto.<br>
+
+**3.** Clonar repositorio:<br>
+  3.1. Se debe ir al directorio al cual se debe clonar el directorio:<br>
+  ```bash
+  cd Desktop
+  mkdir prototipo
+  cd prototipo
+  ```
+  3.2. Clonar repositorio:<br>
+  ```bash
+  git clone https://github.com/marcomald/adaptiveMenu.git
+  ```
+  ## Levantar Ambiente
+
+  Se debe ir al directorio del repositorio
+    ```bash
+    cd Desktop/prototipo/menuAdaptativo
+    sails lift
+    ```
+  Ir la dirección: http://localhost:1337/
+
+  ## Contribuidores
+
+  Marco Lozano, Alvaro Carrera, Paul Garcia, Martin Beltran, William Marcillo.<br>
+  Universidad de las Americas, 2018.
+  Certificación de Herramientas de Desarrollo.
