@@ -35,6 +35,10 @@ module.exports = {
       required: true,
       columnName: 'redirigir'
     },
+    isOption:{
+      type: 'number',
+      columnName: 'isOption'
+    }
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗

@@ -13,15 +13,11 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
-    descripcion: {
+
+    menu: {
       type: 'string',
       required: true,
-      columnName: 'descripcion'
-    },
-    estilo: {
-      type: 'string',
-      required: true,
-      columnName: 'estilo'
+      columnName: 'menu'
     },
     masUsados:{
       type: 'number',
