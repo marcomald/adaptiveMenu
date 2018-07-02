@@ -53,5 +53,14 @@ module.exports.datastores = {
 
   },
 
+  somePostgresqlServer: {
+    adapter: 'sails-postgresql',
+    host: 'localhost',
+    user: 'postgres', // optional
+    password: 'root', // optional
+    database: 'menuAdaptativo' //optional
+    //ssl: true
+  },
+
 
 };
